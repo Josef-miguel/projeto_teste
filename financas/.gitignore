@@ -1,0 +1,8 @@
+# Arquivos gerados
+out/
+sources.txt
+
+# Configuração local com senhas (usar config.properties.example como modelo)
+config.properties
+
+# Dados locais do MySQL (ficam fora do projeto, em ~/.mysql-financeiro)

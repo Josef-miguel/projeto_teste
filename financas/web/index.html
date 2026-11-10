@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#172C27">
+  <title>Finanças Pessoais — Entrar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-split">
+
+    <!-- ============ Área esquerda: marca ============ -->
+    <section class="auth-hero">
+      <div class="auth-brand">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect width="24" height="24" rx="7" fill="#477B65"/>
+          <path d="M6.5 15.5 10 11l2.6 2.4L17.5 7.5" stroke="#F4F3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Finanças Pessoais</span>
+      </div>
+
+      <div class="auth-hero-body">
+        <h1>Seu dinheiro, sob controle.</h1>
+        <p class="auth-hero-sub">Acompanhe suas receitas, despesas e pagamentos em um só lugar.</p>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 400 216" fill="none">
+            <!-- card principal com gráfico -->
+            <rect x="0" y="0" width="400" height="140" rx="12" fill="rgba(244,243,238,.05)" stroke="rgba(244,243,238,.09)"/>
+            <line x1="18" y1="34" x2="382" y2="34" stroke="rgba(244,243,238,.06)"/>
+            <line x1="18" y1="64" x2="382" y2="64" stroke="rgba(244,243,238,.06)"/>
+            <line x1="18" y1="94" x2="382" y2="94" stroke="rgba(244,243,238,.06)"/>
+            <!-- área sob a linha -->
+            <path d="M20 116 60 92l40 10 50-36 50 12 60-40 60 14 60-26v76H20Z" fill="rgba(71,123,101,.30)"/>
+            <path d="M20 116 60 92l40 10 50-36 50 12 60-40 60 14 60-26" stroke="#7FA98F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- ponto de destaque -->
+            <circle cx="320" cy="40" r="4" fill="#D99B55"/>
+            <!-- barras inferiores -->
+            <rect x="22" y="186" width="26" height="26" rx="4" fill="rgba(71,123,101,.55)"/>
+            <rect x="58" y="176" width="26" height="36" rx="4" fill="rgba(217,155,85,.55)"/>
+            <rect x="94" y="192" width="26" height="20" rx="4" fill="rgba(71,123,101,.40)"/>
+            <rect x="130" y="168" width="26" height="44" rx="4" fill="rgba(71,123,101,.65)"/>
+            <!-- pílulas de indicadores -->
+            <rect x="196" y="164" width="180" height="22" rx="7" fill="rgba(244,243,238,.06)"/>
+            <circle cx="210" cy="175" r="4" fill="#7FA98F"/>
+            <text x="222" y="179" font-family="Inter, sans-serif" font-size="11" fill="#C9D4CD">Receitas do mês · R$ 5.000</text>
+            <rect x="196" y="192" width="180" height="22" rx="7" fill="rgba(244,243,238,.06)"/>
+            <circle cx="210" cy="203" r="4" fill="#D99B55"/>
+            <text x="222" y="207" font-family="Inter, sans-serif" font-size="11" fill="#C9D4CD">Despesas do mês · R$ 1.640</text>
+          </svg>
+        </div>
+
+        <ul class="hero-points">
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Lançamentos, categorias e contas a pagar
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Relatórios mensais e exportação em CSV
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Seus dados ficam no seu computador
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Área direita: formulário ============ -->
+    <section class="auth-side">
+      <div class="auth-inner">
+        <div class="auth-brand-mobile">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect width="24" height="24" rx="7" fill="#477B65"/>
+            <path d="M6.5 15.5 10 11l2.6 2.4L17.5 7.5" stroke="#F4F3EE" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Finanças Pessoais</span>
+        </div>
+
+        <div class="auth-card">
+          <div class="tabs" role="tablist">
+            <button class="tab active" id="tab-login" type="button">Entrar</button>
+            <button class="tab" id="tab-register" type="button">Criar conta</button>
+          </div>
+
+          <div class="alert alert-error" id="auth-error" hidden>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span id="auth-error-msg"></span>
+          </div>
+
+          <!-- Login -->
+          <form id="form-login" class="auth-form" autocomplete="on">
+            <div class="auth-heading">
+              <h2>Que bom ter você de volta!</h2>
+              <p>Entre na sua conta para continuar.</p>
+            </div>
+            <div class="form-field">
+              <label for="login-email">E-mail</label>
+              <div class="field-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <input type="email" id="login-email" name="email" required placeholder="voce@email.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="login-password">Senha</label>
+              <div class="field-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <input type="password" id="login-password" name="password" required placeholder="Sua senha" autocomplete="current-password">
+                <button type="button" class="password-toggle" data-toggle-password="login-password" aria-label="Mostrar ou ocultar senha">
+                  <svg class="icon-eye" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg class="icon-eye-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c6.5 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3.5 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </form>
+
+          <!-- Cadastro -->
+          <form id="form-register" class="auth-form" hidden autocomplete="on">
+            <div class="auth-heading">
+              <h2>Comece a organizar suas finanças.</h2>
+              <p>Crie sua conta e tenha mais controle sobre seu dinheiro.</p>
+            </div>
+            <div class="form-field">
+              <label for="reg-name">Nome completo</label>
+              <div class="field-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="reg-name" name="name" required maxlength="120" placeholder="Seu nome" autocomplete="name">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="reg-email">E-mail</label>
+              <div class="field-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <input type="email" id="reg-email" name="email" required placeholder="voce@email.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="reg-password">Senha</label>
+              <div class="field-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <input type="password" id="reg-password" name="password" required minlength="6" placeholder="Mínimo de 6 caracteres" autocomplete="new-password">
+                <button type="button" class="password-toggle" data-toggle-password="reg-password" aria-label="Mostrar ou ocultar senha">
+                  <svg class="icon-eye" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <svg class="icon-eye-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c6.5 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3.5 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+                </button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Criar minha conta</button>
+          </form>
+
+          <p class="auth-hint">Ao criar sua conta, categorias padrão de receitas e despesas são geradas automaticamente — você já pode começar a registrar seus lançamentos.</p>
+        </div>
+
+        <p class="auth-foot">Finanças Pessoais · Simples, seguro e offline</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>

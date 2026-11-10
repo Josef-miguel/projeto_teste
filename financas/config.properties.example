@@ -1,0 +1,25 @@
+# Configuração do Sistema de Gerenciamento Financeiro Pessoal
+#
+# Copie este arquivo para "config.properties" e ajuste os valores
+# do seu ambiente. O config.properties real NÃO é versionado no git.
+#
+# Observação: o sistema cria automaticamente o banco de dados, o usuário
+# da aplicação e as tabelas na inicialização (caso não existam), usando
+# as credenciais administrativas abaixo.
+
+# Conexão da aplicação com o MySQL
+db.url=jdbc:mysql://localhost:3306/financeiro?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
+db.user=financas
+db.password=sua_senha_app
+
+# Credenciais administrativas (usuário root ou equivalente com
+# permissão para criar bancos e usuários no MySQL).
+db.admin.url=jdbc:mysql://localhost:3306/?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
+db.admin.user=root
+db.admin.password=sua_senha_root
+
+# Porta do servidor web embutido
+server.port=8080
+
+# Pasta dos arquivos do front-end
+web.dir=web
